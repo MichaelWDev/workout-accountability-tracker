@@ -1,0 +1,30 @@
+#dashboard {
+	position: relative;
+	top: 4em;
+	height: 75vh;
+	background-color: var(--color-5);
+}
+
+#sidebar-nav {
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.active {
+	background: none;
+}
+
+.username-btn {
+	width: 10em;
+	text-align: left;
+	background: none;
+}
+
+/* .dropdown {
+	position: relative;
+	width: 100%;
+	padding: 1em;
+	background-color: rgba(0, 0, 0, 0.5);
+} */
+
+/* .username {} */
