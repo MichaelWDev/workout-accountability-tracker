@@ -1,3 +1,81 @@
-/* You can add global styles to this file, and also import other style files */
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+/*—————————————————————————————————————————————————————————————————————————*/
+/*—— SECTION: INFORMATION
+/*—————————————————————————————————————————————————————————————————————————*/
+
+/*
+	Styling for index.html.
+*/
+
+/*——— !SECTION —————————————————————————————————————————————————————————————————————*/
+
+/*—————————————————————————————————————————————————————————————————————————*/
+/*—— SECTION: FONT IMPORTS
+/*—————————————————————————————————————————————————————————————————————————*/
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+
+/*——— !SECTION —————————————————————————————————————————————————————————————————————*/
+
+/*—————————————————————————————————————————————————————————————————————————*/
+/*—— SECTION: VARIABLES
+/*—————————————————————————————————————————————————————————————————————————*/
+
+:root {
+	/* TEXT COLORS */
+	--text-color-1: rgb(0, 0, 0);
+	--text-color-2: rgb(255, 255, 255);
+
+	/* BACKGROUND COLORS */
+	--background-color-1: rgb(0, 0, 0);
+	--background-color-2: rgba(26, 26, 26, 0.75);
+
+	/* TO-BE-DETERMINED */
+	--color-1: rgb(3, 7, 30);
+	--color-2: rgb(55, 6, 23);
+	--color-3: rgb(106, 4, 15);
+	--color-4: rgb(157, 2, 8);
+	--color-5: rgb(208, 0, 0);
+	--color-6: rgb(220, 47, 2);
+	--color-7: rgb(232, 93, 4);
+	--color-8: rgb(244, 140, 6);
+	--color-9: rgb(250, 163, 7);
+	--color-10: rgb(255, 186, 8);
+	--color-11: rgb();
+	--color-12: rgb();
+
+	/* BORDERS */
+	--border-1: 0.1em solid rgb(3, 7, 30);
+	--border-2: 0.1em solid rgb(55, 6, 23);
+	--border-3: 0.1em solid rgb(106, 4, 15);
+	--border-4: 0.1em solid rgb(157, 2, 8);
+	--border-5: 0.15em solid rgb(208, 0, 0);
+	--border-10: 0.15em solid rgb(255, 186, 8);
+
+	--border-12: 0.15em solid rgb(0, 0, 0);
+
+	/* FONT FAMILIES */
+	--font-family-1:  Roboto, "Helvetica Neue", sans-serif;
+	--font-family-2: 'Raleway', sans-serif;
+	--font-family-3: 'Playfair Display', serif;
+
+}
+
+/*——— !SECTION —————————————————————————————————————————————————————————————————————*/
+
+/*—————————————————————————————————————————————————————————————————————————*/
+/*—— SECTION: BODY
+/*—————————————————————————————————————————————————————————————————————————*/
+
+html, body {
+	height: 100%;
+}
+body {
+	margin: 0;
+	font-family: var(--font-family-1);
+	background-color: var(--background-color-1);
+}
+
+/*——— !SECTION —————————————————————————————————————————————————————————————————————*/

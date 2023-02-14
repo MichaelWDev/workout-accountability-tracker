@@ -6,6 +6,9 @@ import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { RegisterComponent } from './register/register.component';
+import { DemoComponent } from './demo/demo.component';
+import { AboutComponent } from './about/about.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +16,10 @@ import { RegisterComponent } from './register/register.component';
     LoginComponent,
     HomeComponent,
     PageNotFoundComponent,
-    RegisterComponent
+    RegisterComponent,
+    DemoComponent,
+    AboutComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,

@@ -1,34 +1,81 @@
 <body>
 	<!-- SECTION: Navbar -->
+	<nav class="navbar navbar-expand-lg">
+		<a class="navbar-brand" href="/home">
+			<img class="d-inline-block align-center" id="nav-icon" src="../assets/images/frog-mouth-helm-red.png">
+			<span id="nav-brand-text">IRONWORKS</span>
+		</a>
+		
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<!-- ANCHOR: HOME / ABOUT / DEMO -->
+		<div class="collapse navbar-collapse" id="navbarText">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="/home">Home<span class="sr-only"></span></a>
+				</li>
+
+				<li class="nav-item active">
+					<a class="nav-link" href="/about">About<span class="sr-only"></span></a>
+				</li>
+
+				<li class="nav-item active">
+					<a class="nav-link" href="/demo">Demo<span class="sr-only"></span></a>
+				</li>
+
+				<li class="nav-item active">
+					<a class="nav-link" href="/dashboard">Dashboard<span class="sr-only"></span></a>
+				</li>
+			</ul>
+
+			<!-- ANCHOR: LOGIN / REGISTER -->
+			<ul class="nav navbar-nav navbar-right">
+				<li class="nav-item">
+					<a class="nav-link" href="/login">Login/Register</a>
+				</li>
+				
+				<!-- <li class="nav-item">
+					<a class="nav-link" href="/register">Register</a>
+				</li> -->
+			</ul>
+			<!-- <span class="navbar-text">
+				Navbar text with an inline element
+			</span> -->
+		</div>
+	</nav>
+
+<!--
 	<div>
 		<nav class="navbar navbar-expand-lg navbar-light">
 			<div class="container-fluid">
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-						<!-- ANCHOR: Home Button -->
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-left">
+						ANCHOR: Title
+						<li id="nav-title" class="nav-item navbar-left">
+							<img id="nav-icon" src="../assets/images/frog-mouth-helm-red.png">
+							<p>IRONWORKS</p>
+							<a class="navbar-brand nav-text" href="#">IRONWORKS</a>
+						</li>
+					</ul>
+
+					<ul class="navbar-nav navbar-right navbar-nav me-auto mb-2 mb-lg-0 navbar-right">
+						ANCHOR: Home Button 
 						<li class="nav-item">
-							<a class="nav-link active" aria-current="page" routerLink="/home">Home</a>
+							<a class="nav-link nav-a active" aria-current="page" routerLink="/home">Home</a>
 						</li>
 						
-						<!-- ANCHOR: Login Button -->
+						ANCHOR: Login Button 
 						<li class="nav-item">
-							<a class="nav-link active" routerLink="/login">Login</a>
+							<a class="nav-link nav-a active" routerLink="/login">Login</a>
 						</li>
-
-						<!-- <li class="nav-item">
-							<a class="nav-link active" routerLink="/addNewEmployee">Add New Employee</a>
-						</li> -->
-
-						<!-- Add -->
-						<!-- <button type="button" title="Add New Employee" class="btn btn-outline-success position-" (click)="addNewEmployee()"><mat-icon>person_add</mat-icon></button> -->
-						<!-- <button type="button" title="Add New Employee" class="btn btn-outline-success position-" routerLink="/addNewEmployee"><mat-icon>person_add</mat-icon></button> -->
-						<!-- View -->
-						<!-- <button type="button" class="btn btn-info" (click)="employeeInfo(emp)">View</button> -->
 					</ul>
 				</div>
 			</div>
 		</nav>
 	</div>
+-->
 
 	<!-- SECTION: ROUTER OUTLET -->
 	<router-outlet></router-outlet>

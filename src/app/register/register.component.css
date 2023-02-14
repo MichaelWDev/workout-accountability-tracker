@@ -1,0 +1,78 @@
+/*—————————————————————————————————————————————————————————————————————————*/
+/*—— SECTION: INFORMATION
+/*—————————————————————————————————————————————————————————————————————————*/
+
+/*
+	CSS for the REGISTER component.
+*/
+
+/*——— !SECTION —————————————————————————————————————————————————————————————————————*/
+
+/*—————————————————————————————————————————————————————————————————————————*/
+/*—— SECTION: FORM
+/*—————————————————————————————————————————————————————————————————————————*/
+
+.form-signin {
+	position: relative;
+	top: 5em;
+	width: 100%;
+	max-width: 330px;
+	padding: 15px;
+	margin: 0 auto;
+	color: var(--text-color-2);
+	background-color: var(--background-color-2);
+}
+
+.form-input {
+	border: none;
+	outline: none;
+	background: none;
+	border-radius: 0;
+	margin-bottom: 1em;
+	color: var(--color-5);
+	border-bottom: var(--border-12);
+}
+
+.form-input:focus {
+	box-shadow: none;
+	border-bottom: var(--border-5);
+}
+
+#show-password-btn {
+	position: relative;
+	left: 8em;
+	bottom: 3.5em;
+	background: none;
+	color: var(--color-5);
+	border: var(--border-5);
+}
+
+#show-password-btn:active {
+	outline: none;
+}
+
+#create-account-btn {
+	color: var(--color-5);
+}
+
+#inputPasswordAgain {
+	bottom: 1em;
+}
+
+.btn {
+	background: none;
+	color: var(--text-color-2);
+	border: var(--border-5);
+}
+
+.btn:focus {
+	box-shadow: none;
+}
+
+.btn:active {
+	font-weight: 400;
+	color: var(--text-color-1);
+	background-color: var(--color-5);
+}
+
+/*——— !SECTION —————————————————————————————————————————————————————————————————————*/
