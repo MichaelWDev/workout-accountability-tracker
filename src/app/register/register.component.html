@@ -1,27 +1,27 @@
 <body class="text-center">
-	<form class="form-signin">
+	<form class="form-signin" autocomplete="off">
 		<img class="mb-4" src="../assets/images/mighty-force-red.png" alt="" width="72" height="72">
 	
 		<h1 class="h4 mb-3 font-weight-normal">Fill out the information below to begin your <span style="color: var(--color-5);">journey.</span></h1>
 
-		<label for="inputUsername" class="sr-only">Username</label>
+		<!-- <label for="inputUsername" class="sr-only">Username</label> -->
 		<input type="username" id="inputUsername" class="form-input form-control" placeholder="Username" required="" autofocus="">
 
-		<label for="inputEmail" class="sr-only">Email address</label>
+		<!-- <label for="inputEmail" class="sr-only">Email address</label> -->
 		<input type="email" id="inputEmail" class="form-input form-control" placeholder="Email address" required="" autofocus="">
 		
-		<label for="inputPassword" class="sr-only">Password</label>
+		<!-- <label for="inputPassword" class="sr-only">Password</label> -->
 		<input [type]="show ? 'text' : 'password'" id="inputPassword" class="form-input form-control" placeholder="Password" required="">
 		<button id="show-password-btn" (click)="password()">{{show ? '✖' : '👁'}}</button>
 
-		<label for="inputPasswordAgain" class="sr-only">Password Again</label>
+		<!-- <label for="inputPasswordAgain" class="sr-only">Password Again</label> -->
 		<input [type]="show ? 'text' : 'password'" id="inputPasswordAgain" class="form-input form-control" placeholder="Password Again" required="">
 
-		<div class="checkbox mb-3">
+		<!-- <div class="checkbox mb-3">
 			<label>
 				<input type="checkbox" value="remember-me">Remember me
 			</label>
-		</div>
+		</div> -->
 
 		<!-- <h1 class="h6 mb-3 font-weight-normal">
 			Not a member?
@@ -30,6 +30,6 @@
 
 		<button class="btn btn-lg btn-block" type="submit">Register</button>
 		
-		<p class="mt-5 mb-3 text-muted">IRONWORKS © 2023</p>
+		<p class="mt-5 mb-3 text-muted copyright">IRONWORKS © 2023</p>
 	</form>
 </body>

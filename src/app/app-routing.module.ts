@@ -1,24 +1,57 @@
 import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
+// SECTION: Pages
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
-import { DemoComponent } from './demo/demo.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
 
+// SECTION: Demo
+import { DemoComponent } from './demo/demo.component';
+import { DemoHomeComponent } from './demo-home/demo-home.component';
+import { DemoDashboardComponent } from './demo-dashboard/demo-dashboard.component';
+
+// SECTION: Dashboard
+import { DashboardComponent } from './dashboard/dashboard.component';
+// import { DashboardHomeComponent } from './dashboard-home/dashboard-home.component';
+
+// SECTION: Login / Register
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 
+// SECTION: Page Not Found
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+
+// SECTION: Services
 import { AuthGuardService } from 'src/services/auth-guard.service';
 // import { RouteguardGuard } from './services/routeguard.guard';
 
 const routes: Routes = [
+	// ANCHOR: Pages Routing
 	{ path: 'home', component: HomeComponent },
 	{ path: 'about', component: AboutComponent },
-	{ path: 'demo', component: DemoComponent },
-	{ path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuardService] },
 
+	// ANCHOR: Demo Routing
+	{
+		path: 'demo',
+		component: DemoComponent,
+		children: [
+			{
+				path: 'demo-home',
+				component: DemoHomeComponent,
+				outlet: 'demo-display'
+			},
+			{
+				path: 'demo-dashboard',
+				component: DemoDashboardComponent,
+				outlet: 'demo-display'
+			}
+		]
+	},
+
+	// ANCHOR: Dashoard Routing
+	{ path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuardService] },
+	
+	// ANCHOR: Login / Register Routing
 	{ path: 'login', component: LoginComponent },
 	{ path: 'register', component: RegisterComponent },
 	{ path: '', redirectTo: '/home', pathMatch: 'full' }, // redirect to the home component if path is empty

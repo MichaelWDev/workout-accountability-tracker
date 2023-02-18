@@ -14,7 +14,7 @@
 
 .form-signin {
 	position: relative;
-	top: 5em;
+	top: 4em;
 	width: 100%;
 	max-width: 330px;
 	padding: 15px;
@@ -33,9 +33,19 @@
 	border-bottom: var(--border-12);
 }
 
+.form-input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: var(--text-color-2);
+	opacity: 1; /* Firefox */
+}
+
 .form-input:focus {
 	box-shadow: none;
 	border-bottom: var(--border-5);
+}
+
+.form-input:focus::placeholder {
+	color: var(--color-5);
+	opacity: 1; /* Firefox */
 }
 
 #show-password-btn {
@@ -69,6 +79,21 @@
 	font-weight: 400;
 	color: var(--text-color-1);
 	background-color: var(--color-5);
+}
+
+.checkbox {
+	position: relative;
+	bottom: 1.5em;
+}
+
+.remember-me {
+	margin-right: 0.5em;
+	background: none;
+	border: var(--border-12);
+}
+
+.copyright {
+	color: var(--text-color-2) !important;
 }
 
 /*——— !SECTION —————————————————————————————————————————————————————————————————————*/
