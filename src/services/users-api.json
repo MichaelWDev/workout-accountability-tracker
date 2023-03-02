@@ -1,0 +1,29 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "Username": "AlexLudovik",
+      "FirstName": "Alex",
+      "LastName": "Ludovik",
+      "Email": "test@test.com",
+      "Password": "123"
+    },
+    {
+      "id": 2,
+      "Username": "admin",
+      "FirstName": "admin",
+      "LastName": "admin",
+      "Email": "admin@admin.com",
+      "Password": "123"
+    },
+    {
+      "id": "e7464227-8225-4097-9db8-cdf2a0842c49"
+    },
+    {
+      "id": 3
+    },
+    {
+      "id": 4
+    }
+  ]
+}

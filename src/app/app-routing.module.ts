@@ -13,6 +13,8 @@ import { DemoDashboardComponent } from './demo-dashboard/demo-dashboard.componen
 // SECTION: Dashboard
 import { DashboardComponent } from './dashboard/dashboard.component';
 // import { DashboardHomeComponent } from './dashboard-home/dashboard-home.component';
+import { DashboardDashboardComponent } from './dashboard-dashboard/dashboard-dashboard.component';
+import { DashboardHomeComponent } from './dashboard-home/dashboard-home.component';
 
 // SECTION: Login / Register
 import { LoginComponent } from './login/login.component';
@@ -22,7 +24,9 @@ import { RegisterComponent } from './register/register.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 // SECTION: Services
-import { AuthGuardService } from 'src/services/auth-guard.service';
+import { AuthGuard } from './auth.guard';
+
+// import { AuthGuardService } from 'src/services/auth-guard.service';
 // import { RouteguardGuard } from './services/routeguard.guard';
 
 const routes: Routes = [
@@ -49,7 +53,23 @@ const routes: Routes = [
 	},
 
 	// ANCHOR: Dashoard Routing
-	{ path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuardService] },
+	{
+		path: 'dashboard',
+		component: DashboardComponent,
+		canActivate: [AuthGuard],
+		children: [
+			{
+				path: 'dashboard-home',
+				component: DashboardHomeComponent,
+				outlet: 'demo-display'
+			},
+			{
+				path: 'dashboard-dashboard',
+				component: DashboardDashboardComponent,
+				outlet: 'demo-display'
+			}
+		]
+	},
 	
 	// ANCHOR: Login / Register Routing
 	{ path: 'login', component: LoginComponent },

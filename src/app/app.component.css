@@ -110,4 +110,13 @@ nav {
 	background-color: black;
 }
 
+.navbar-toggler {
+	transition: 0.1s;
+	border: 0.1em solid var(--color-5);
+}
+
+.navbar-toggler:active {
+	background-color: var(--color-4);
+}
+
 /*——— !SECTION —————————————————————————————————————————————————————————————————————*/

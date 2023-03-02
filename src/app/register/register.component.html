@@ -1,20 +1,26 @@
 <body class="text-center">
-	<form class="form-signin" autocomplete="off">
+	<form #registerForm="ngForm" (ngSubmit)="registerUserForm(registerForm)" class="form-signin" autocomplete="off">
 		<img class="mb-4" src="../assets/images/mighty-force-red.png" alt="" width="72" height="72">
 	
 		<h1 class="h4 mb-3 font-weight-normal">Fill out the information below to begin your <span style="color: var(--color-5);">journey.</span></h1>
 
-		<!-- <label for="inputUsername" class="sr-only">Username</label> -->
-		<input type="username" id="inputUsername" class="form-input form-control" placeholder="Username" required="" autofocus="">
+		<!-- ANCHOR: Username -->
+		<input type="username" id="inputUsername" class="form-input form-control" placeholder="First Name" required="" autofocus="">
 
-		<!-- <label for="inputEmail" class="sr-only">Email address</label> -->
+		<!-- ANCHOR: First Name -->
+		<input type="First Name" id="inputFirstName" class="form-input form-control" placeholder="Last Name" required="" autofocus="">
+		
+		<!-- ANCHOR: Last Name -->
+		<input type="Last Name" id="inputLastName" class="form-input form-control" placeholder="Username" required="" autofocus="">
+
+		<!-- ANCHOR: Email -->
 		<input type="email" id="inputEmail" class="form-input form-control" placeholder="Email address" required="" autofocus="">
 		
-		<!-- <label for="inputPassword" class="sr-only">Password</label> -->
+		<!-- ANCHOR: Password -->
 		<input [type]="show ? 'text' : 'password'" id="inputPassword" class="form-input form-control" placeholder="Password" required="">
 		<button id="show-password-btn" (click)="password()">{{show ? '✖' : '👁'}}</button>
 
-		<!-- <label for="inputPasswordAgain" class="sr-only">Password Again</label> -->
+
 		<input [type]="show ? 'text' : 'password'" id="inputPasswordAgain" class="form-input form-control" placeholder="Password Again" required="">
 
 		<!-- <div class="checkbox mb-3">
